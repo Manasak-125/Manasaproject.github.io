@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portfolio-Super store sales analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Project-Portfolio</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html" class="active">Portfolio</a></li>
+					
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Super store sales performance analysis</h1>
+							<span class="image fit"><img src="images/Final dashboard.jpg" alt="" /></span>
+							<h3>1) Ask: </h3>
+							<p>A crucial phase in the data analysis procedure involves understanding the problem statement.<br>
+							<ul>
+								<li>Which country leads in sales volume?</li>
+								<li>How much sales revenue is being produced by each category?</li>
+								<li>Within each category, which sub-category has achieved higher sales?</li>
+								<li>Identifying the top-10 most valuable customers for the business.
+								</li>
+								<li>Which segment yields greater profit?</li>	
+									<li>	Which country contributes the most to profits?</li>
+								
+							  </ul>
+							  <h3>2) Prepare: </h3>
+							  <p>For this initiative, I sourced the necessary dataset from Kaggle, which comprises 51,291 entries and 21 attributes. </p>
+							  <h3>3) Process: </h3>
+							  <p>In this project, I employ Microsoft Excel for the task of data cleaning:</p>
+							  
+							  <h3>Data Cleaning : </h3>
+                            
+							  <ol>
+								<li>It's essential to first make a backup of the dataset, adhering to best practices before initiating the data cleaning process.</li>
+								<li>The dataset is free of any duplicate entries.</li>
+								<li>This dataset lacks any empty cells as well.</li>
+								<li>Given that not all attributes, such as the region/market attributes, will be relevant to our analysis, we can exclude them from our dataset.</li>
+								<li>Our analysis will concentrate on sales performance, thus it's crucial that each entry has at least one order. Records with zero orders need to be identified and can be eliminated using Excel’s COUNTIF and FILTER functions.</li>
+								<li>A challenging aspect of this task is standardizing the date formats in the 'Order_date' and 'Ship_date' columns, due to the amalgamation of data from diverse sources leading to inconsistent date formats.</li>
+								<li>I addressed this challenge by employing the TEXT-TO-COLUMNS feature in MS Excel, which harmonized all date formats into a uniform standard.</li>
+								<li>The client wishes to analyze the average delivery duration for each shipping mode, necessitating the addition of a new column that computes the delivery time for each order.</li>
+								<li>I generated this column using Excel’s DAYS function, which calculates the interval between any two specified dates.</li>
+								<li>I utilized LENGTH and TRIM functions,to ensure text data is free from leading and trailing spaces.</li>
+									
+							  </ol>
+							  <p style="color :rgb(18, 212, 35)">Now the data is ready for analysis!</p> 
+
+							  <h3>4) Analyze: </h3>
+							  <ol>
+                               <li>The dashboard reveals that New York City leads in sales, generating approximately $2.2 million, while Brazil ranks tenth, contributing around $361,000 in sales revenue.</li>
+                               <li>In the breakdown of categories, Technology claims the top spot, accounting for 38% of the total sales, followed by Furniture at 32%, and Office Supplies at 30%.</li>    
+							   <li>The highest-grossing subcategories for the company are Phones, Copiers, Chairs, Bookcases, and Storage, with Phones leading at about $1.7 million in sales, and Copiers not far behind with $1.5 million. Chairs come in third with sales around $1.5 million.</li>
+							   <li>The dashboard also highlights the top-10 customers who have contributed the most to revenue.</li>
+							   <li>Analysis shows that the Consumer segment leads with revenues of $749K, followed by the Corporate segment at $442K, and the Home Office segment at $277K.</li>
+							   <li>The trend from 2011 to 2014 shows a steady increase in sales and profit generation year over year.</li>
+							   <li>The Standard shipping method is the most preferred, with an average cost of $20 and a delivery timeframe of approximately 5 days. This is followed by Second Class at $30 and 3 days, and then by First Class and Same Day delivery options.
+
+							   </li>
+							  
+								</ol>
+							 
+								<h3>5) Visualize: </h3>
+							<p>We are now poised to showcase our interactive dashboard to clients and stakeholders, ensuring a deeper understanding and appreciation of the insights derived.<br>
+							<a href= "https://public.tableau.com/app/profile/manasa.k4836/viz/Superstore-sales-analysis-dashboard/Salesforecastdashboard">Take a detailed view at the dashboard here.</a></li>
+						     
+							<h3>6) Act : Insights and Recommendations.</h3>
+
+							<p> Below are general insights and recommendations from the analysis: </p>
+
+							<ul>
+								<li>Maintaining a customer-centric approach is crucial for the sustained success of any business. By identifying the top 10 customers, it's imperative to engage them with personalized offers, discounts, or promotions and targeted product recommendations based on their preferences and purchase history.</li>
+								<li>With Phones leading the subcategory in the booming Technology sector, increasing marketing efforts to capture an even larger market share, and ensuring adequate inventory levels to meet demand, are strategic moves.</li>
+								<li>Investigating the reasons behind lower sales in other categories through market research or customer feedback, and making necessary adjustments, is essential.</li>
+								<li>Given the Consumer Segment's high revenue generation, prioritizing this segment by analyzing customer preferences, market trends, and identifying top-selling products could maximize revenue.<br>
+
+									Exploring strategies to boost revenue in the Corporate and Home Office Segments through tailored sales strategies, pricing, and filling in product offering gaps could unveil new opportunities.</li>
+								<li>The popularity of Standard Class shipping due to its lower cost yet longer delivery time suggests exploring ways to reduce shipping costs for faster options might attract a broader customer base.</li>
+								
+							  </ul>
+
+							<p>"Constantly revising strategies based on customer feedback, market trends, and performance data, alongside a focus on customer satisfaction, remains vital for any business aiming for long-term growth."</p>
+							<style>
+							 h4{text-align: center;}
+								</style>
+
+								<body>  
+
+								<h4 style="color :rgb(176, 212, 18)">Thank you!</h4>
+								
+							</body>
+
+
+						</div>
+					</section>
+						
+			
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li><a href="http://127.0.0.1:5500/index.html#three" class="button">Home</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
